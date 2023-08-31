@@ -6,7 +6,7 @@
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::restaurant.restaurant', ({strapi}) => ({
+module.exports = createCoreController('api::restaurant.restaurant', ({ strapi }) => ({
   async getRestaurantName(ctx) {
     const results = await strapi
       .service("api::restaurant.restaurant")
