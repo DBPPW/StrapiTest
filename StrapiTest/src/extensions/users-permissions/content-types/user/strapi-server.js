@@ -4,7 +4,7 @@ module.exports = (plugin) => {
   };
 
   plugin.routes['content-api'].routes.push({
-    method: 'POST',
+    method: 'GET',
     path: '/users/newOneMethod',
     handler: 'users.newOneMethod',
     config: {
