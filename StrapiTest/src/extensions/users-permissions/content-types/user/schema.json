@@ -65,8 +65,8 @@
       "inversedBy": "users",
       "configurable": false
     },
-    "JWT": {
-      "type": "json"
+    "account": {
+      "type": "string"
     }
   }
 }

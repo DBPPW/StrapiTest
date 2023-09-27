@@ -39,6 +39,21 @@
     "applyEndTime": {
       "type": "datetime",
       "required": true
+    },
+    "applicants": {
+      "type": "integer"
+    },
+    "orders": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::order.order",
+      "mappedBy": "course"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "mappedBy": "courses"
     }
   }
 }

@@ -21,12 +21,14 @@
     "email": {
       "type": "email"
     },
-    "uuid": {
-      "type": "customField",
-      "customField": "plugin::field-uuid.uuid"
-    },
     "phone": {
       "type": "string"
+    },
+    "orders": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::order.order",
+      "mappedBy": "customer"
     }
   }
 }

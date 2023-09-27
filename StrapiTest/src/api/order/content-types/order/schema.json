@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "singularName": "order",
+    "pluralName": "orders",
+    "displayName": "Order",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "CourseId": {
+      "type": "integer"
+    },
+    "email": {
+      "type": "email"
+    },
+    "CustomerName": {
+      "type": "string"
+    },
+    "cellphone": {
+      "type": "string"
+    },
+    "Created": {
+      "type": "datetime"
+    },
+    "Updated": {
+      "type": "datetime"
+    },
+    "customer": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::customer.customer",
+      "inversedBy": "orders"
+    },
+    "course": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::course.course",
+      "inversedBy": "orders"
+    }
+  }
+}
