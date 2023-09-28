@@ -12,28 +12,10 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "CourseId": {
-      "type": "integer"
-    },
-    "email": {
-      "type": "email"
-    },
-    "CustomerName": {
-      "type": "string"
-    },
-    "cellphone": {
-      "type": "string"
-    },
-    "Created": {
-      "type": "datetime"
-    },
-    "Updated": {
-      "type": "datetime"
-    },
-    "customer": {
+    "users_permissions_user": {
       "type": "relation",
       "relation": "manyToOne",
-      "target": "api::customer.customer",
+      "target": "plugin::users-permissions.user",
       "inversedBy": "orders"
     },
     "course": {
