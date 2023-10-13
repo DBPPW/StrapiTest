@@ -73,6 +73,9 @@
       "relation": "oneToMany",
       "target": "api::order.order",
       "mappedBy": "users_permissions_user"
+    },
+    "cellphone": {
+      "type": "string"
     }
   }
 }

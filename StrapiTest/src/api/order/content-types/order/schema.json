@@ -23,6 +23,15 @@
       "relation": "manyToOne",
       "target": "api::course.course",
       "inversedBy": "orders"
+    },
+    "email": {
+      "type": "email"
+    },
+    "name": {
+      "type": "string"
+    },
+    "cellphone": {
+      "type": "string"
     }
   }
 }

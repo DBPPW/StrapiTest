@@ -40,9 +40,6 @@
       "type": "datetime",
       "required": true
     },
-    "applicants": {
-      "type": "integer"
-    },
     "orders": {
       "type": "relation",
       "relation": "oneToMany",
@@ -54,6 +51,26 @@
       "relation": "manyToMany",
       "target": "api::category.category",
       "mappedBy": "courses"
+    },
+    "remaining": {
+      "type": "integer"
+    },
+    "teacher": {
+      "type": "string"
+    },
+    "popular": {
+      "type": "boolean"
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   }
 }
