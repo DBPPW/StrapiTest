@@ -46,20 +46,11 @@
       "target": "api::order.order",
       "mappedBy": "course"
     },
-    "categories": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::category.category",
-      "mappedBy": "courses"
-    },
     "remaining": {
       "type": "integer"
     },
     "teacher": {
       "type": "string"
-    },
-    "popular": {
-      "type": "boolean"
     },
     "image": {
       "type": "media",
@@ -70,6 +61,20 @@
         "files",
         "videos",
         "audios"
+      ]
+    },
+    "popular": {
+      "type": "boolean"
+    },
+    "statement": {
+      "type": "string"
+    },
+    "test": {
+      "type": "enumeration",
+      "enum": [
+        "morning",
+        "noon",
+        "night"
       ]
     }
   }

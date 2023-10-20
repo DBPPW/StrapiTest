@@ -25,7 +25,8 @@
       "inversedBy": "orders"
     },
     "email": {
-      "type": "email"
+      "type": "email",
+      "unique": true
     },
     "name": {
       "type": "string"
